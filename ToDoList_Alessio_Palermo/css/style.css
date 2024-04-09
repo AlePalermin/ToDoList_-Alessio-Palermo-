@@ -1,0 +1,195 @@
+* {
+    padding: .1rem;
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+body {
+    display: flex;
+    background: #342B50; /* Gradient background */
+    color:  #342B50; /* Testo */
+}
+
+.form-control {
+    display: flex;
+    padding-bottom: 2rem;
+}
+
+.form-control input {
+    flex: 1;
+    outline: 0;
+    padding-bottom: .1px;
+    box-shadow: none;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-bottom: 2px solid #342B50;
+    background-color: transparent;
+}
+
+button {
+    padding: 0.2rem 0.4rem;
+    font-size: 0.8rem;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    transition: 0.4s;
+    border: none;
+    background-color: transparent;
+}
+
+button:hover {
+    background-color: #5d057b88;
+}
+
+#todo-form button[type="submit"],
+#edit-form button[type="submit"] {
+    background-image: url(../images/icons8-aggiungi-64.png);
+    background-position: center;
+    min-width: 40px;
+    min-height: 40px;
+    border-radius: 25px 25px;
+}
+
+#cancel-edit-btn {
+    margin-top: 1rem;
+    color: #fff;
+    background-color: #342B50;
+    padding: 0.1rem 0.1rem;
+}
+
+/* Style for the "Done" button */
+.finish-todo,
+.done button {
+    background-image: url(../images/icons8-symantec-40.png);
+    padding: 0;
+    background-position: center;
+    min-width: 30px;
+    min-height: 30px;
+    border-radius: 25px 25px;
+}
+
+/* Style for the "Edit" button */
+.edit-todo {
+    background-image: url(../images/icons8-modificare-40.png);
+    padding: 0;
+    background-position: center;
+    min-width: 30px;
+    min-height: 30px;
+    border-radius: 25px 25px;
+}
+
+/* Style for the "Remove" button */
+.remove-todo {
+    background-image: url(../images/icons8-rimuovi-40.png);
+    padding: 0;
+    background-position: center;
+    min-width: 30px;
+    min-height: 30px;
+    border-radius: 25px 25px;
+}
+
+.date-hour {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1rem 1rem 1.5rem 1rem;
+    font-size: 16px;
+    color: #342B50;
+}
+
+#date {
+    flex: 1;
+}
+
+input {
+    padding: .4rem .5rem;
+}
+
+.hide {
+    display: none;
+}
+
+.todo-container {
+    background-color: azure;
+    position: relative;
+    border-radius: 15px;
+    width: 450px;
+    margin: 3rem auto;
+    padding: 1.5rem;
+}
+
+.todo-container header {
+    padding: 0 1rem 1rem;
+    border-bottom: 1px solid #342B50;
+}
+
+header > h1 {
+    padding-left: 16px;
+    border-left: 5px solid #342B50;
+}
+
+#todo-form #edit-form {
+    padding: 1rem;
+    border-bottom: 1px solid #342B50;
+}
+
+#todo-form > p, #edit-form > p {
+    margin-bottom: .5rem;
+    font-weight: bold;
+}
+
+.form-control > input {
+    margin-right: .8rem;
+}
+
+.todo {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0.5rem 0.2rem;
+    border-bottom: 1px solid #9379C2;
+    transition: .3s;
+}
+
+.todo h3 {
+    flex: 1;
+    font-size: 0.9rem;
+}
+
+.done {
+    background: linear-gradient(to left, #342B50, #9379C2);
+}
+
+.done h3 {
+    color: white;
+    text-decoration: line-through;
+    font-style: italic;
+}
+
+#todo-list {
+    max-height: 220px;
+    overflow: auto;
+}
+
+/* CSS for the "Delete All" button */
+#delete-all-btn {
+    margin-top: 1rem;
+    color: #fff;
+    background-color: #7000cc;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#delete-all-btn:hover {
+    background-color: #650e90;
+}
+
+.delete-all-container {
+    text-align: center;
+    margin-top: 1rem;
+}

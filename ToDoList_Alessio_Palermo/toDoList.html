@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do App by Alessio Palermo</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="script.js" defer></script>
+</head>
+<body onload="time()">
+    <div class="todo-container">
+        <div class="date-hour">
+            <p id="date">Date</p>
+            <p id="hour">Time</p> 
+        </div>
+
+        <header>
+            <h1>To Do List</h1>
+        </header>
+        <!--New Task-->
+        <form action="" id="todo-form">
+            <p>Add your task here</p>
+            <div class="form-control custom-form-control">
+                <input type="text" id="todo-input" placeholder="Type here about next task">
+                <button type="submit"></button>
+            </div>
+        </form>
+        <!--Edit Task-->
+        <form action="" id="edit-form" class="hide">
+            <p>Edit your task</p>
+            <div class="form-control custom-form-control">
+                <input type="text" id="edit-input" placeholder="Type here about next task">
+                <button type="submit"></button>
+            </div>
+
+            <button type="button" id="cancel-edit-btn">Cancel</button>
+        </form>
+        <!--Task List-->
+        <div class="todo-list" id="todo-list">
+        </div>
+
+        <!-- Delete All Button -->
+        <div class="delete-all-container">
+            <button type="button" id="delete-all-btn" onclick="deleteAllTasks()">Delete All</button>
+        </div>
+    </div>
+</body>
+</html>
